@@ -94,20 +94,29 @@
 |  |<img width="854" alt="redoc" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/71ad9542-cd88-4852-975c-14b8b2c38fda">| redoc-ui |
 
 # 6. 개발 중 장애물 & 극복 방법
-  - Trouble Shooting (장애물)
+  - 장애물
     - drf-spectacular
-    - content2
-    - content3
+      - 지금까지의 프로젝트에서 활용해본 적이 없는 새로운 개념으로 배경지식 부족
+      - 활용법 미숙지로 인해 setting 및 적용하는 과정에서 장애 발생
+      - spectacular ui 적용 후, 단순 적용에서 나아가 view layer수준 api doc 커스터마이징 과정에서 장애 발생
+        - 전체 서비스 내 app별로 view 상속 레벨이 다른 경우, drf-spectacular가 매번 같은 형태로 적용하지 않으며 다른 방식을 취함
+          - @extend_schema의 경우 메소드 단위 데코레이터로 하나의 메소드(path)에 해당하는 문서화 커스터마이징 시 사용하며 가장 보편적인 데코레이터
+          - @extend_schema_view의 경우 클래스 단위 데코레이터로 하나의 ViewSet에 속한 메소드 문서화를 커스터마이징 하는데 활용
+          - @extned_schema_serializer 시리얼라이져 자체의 스키마 커스텀 시 활용
+            - 형태별 적용위치, 동시 적용 시 우선순위 등을 알지 못해 오적용 했을 시 에러 발생 (적용 우선순위: method > viewset > serializer)
 
-  - 극복 방법
-      - content1
-      - content2
-      - content3
+  - 극복 방법 (Trouble shooting)
+    - drf-spectacular
+      - 공식문서 활용
+      - 관련 내용을 다룬 기술 블로그 참조
+    
 
 # 7. 추가 및 리서치 하고 싶은 기능
-  - 기능1
-  - 기능2
-  - 기능3
+  - drf-spectacular
+    - View 클래스 내부 메소드 단위의 schema를 일괄적으로 적용한 것에 대한 아쉬움 존재
+    - 단순 적용 및 담당 serializer를 request/response하여 api 동작을 확인하는 것에 추가로, 메소드별 커스터마이징 추가적용 희망
+      - 커스터마이징 시 각 파라미터별 역할과 사용법을 좀 더 익혀 서비스 개발 시 협업에 큰 도움이 되는 drf-spectacular에 대한 이해도와 활용 스킬을 증진하고자 함
+
 
 # 8. 프로젝트 소감 (어려웠던 점 & 배운점 & 향후 계획)
   - 어려웠던 점 (trouble shooting)
