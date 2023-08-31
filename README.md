@@ -7,7 +7,24 @@
 # 개발 기간
   - 23.8.17 ~ 23.09.04
 
-# 기술 스택 & 개발 환경
+# DataBase Structure
+  -
+
+# API 명세
+  -
+
+# Index
+  1. 기술스택 & 개발환경
+  2. 팀원소개 및 역할
+  3. 프로젝트 요약
+  4. 주요 기능 소개
+  5. 라이브 데모
+  6. 개발 중 장애물 & 극복 방법
+  7. 추가 및 리서치 하고 싶은 기능
+  8. 프로젝트 소감 (어려웠던 점 & 배운점 & 향후 계획)
+  9. Q & A
+
+# 1. 기술 스택 & 개발 환경
 <table>
     <thead align="center">
         <tr>
@@ -61,42 +78,36 @@
         </tr>
     </tbody>
 </table>
-
-# Index
-  1. DataBase Structure
-  2. API 명세(SWAGGER/REDOC)
-     | swagger | redoc |
-     |:---------:|:-------:|
-     |<img width="731" alt="swagger" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/9ebc11a4-e655-4062-9bae-a2d240e4d2ce">|<img width="854" alt="redoc" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/71ad9542-cd88-4852-975c-14b8b2c38fda">|
      
-# 팀원소개 및 역할
+# 2. 팀원소개 및 역할
   - 남궁범: 유저,인증 관련 개발
   - 이지섭: 뉴스 CRUD 구현
   - 주기현: 게시판 CRUD 구현
   - 김재현: 코드 고도화(리팩토링/spectacular)
   - 박종수: s3 버킷 파일 업로드, Nginx 배포
 
-# 프로젝트 요약
+# 3. 프로젝트 요약
   - 핵심요약1
   - 핵심요약2
       - 부가설명1
       - 부가설명2
    
-# 주요 기능 소개
+# 4. 주요 기능 소개
   - Classroom
   - News
   - User
   - Spectacular
+      
   - 배포
 
-# 라이브 데모
-|   | 미디어 파일 | 설명 |
-|---|----------|-----|
-| 1 | 미디어 파일1| 비고 |
+# 5. 라이브 데모
+|   | swagger | redoc |
+|---|:--------:|:---:|
+|   |<img width="731" alt="swagger" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/9ebc11a4-e655-4062-9bae-a2d240e4d2ce">|<img width="854" alt="redoc" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/71ad9542-cd88-4852-975c-14b8b2c38fda">|
 
-# 개발 중 장애물 & 극복 방법
+# 6. 개발 중 장애물 & 극복 방법
   - Trouble Shooting (장애물)
-    - content1
+    - drf-spectacular
     - content2
     - content3
 
@@ -105,14 +116,12 @@
       - content2
       - content3
 
-# 추가 및 리서치 하고 싶은 기능
+# 7. 추가 및 리서치 하고 싶은 기능
   - 기능1
   - 기능2
   - 기능3
 
-# 프로젝트 소감 (어려웠던 점 & 배운점 & 향후 계획)
+# 8. 프로젝트 소감 (어려웠던 점 & 배운점 & 향후 계획)
   - 어려웠던 점 (trouble shooting)
   - 배운점
   - 향후 계획
-
-
