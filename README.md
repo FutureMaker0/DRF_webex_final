@@ -14,17 +14,52 @@
 <table>
     <thead align="center">
         <tr>
-            <th colspan="3"><span>백엔드</span></th>
-            <th colspan="3"><span>프론트엔드</span></th>
-            <th colspan="3"><span>데이터베이스</span></th>
-            <th colspan="3"><span>디자인</span></th>
-            <th colspan="3"><span>배포</span></th>
+            <th colspan="2"><span>BE</span></th>
+            <th colspan="3"><span>FE</span></th>
+            <th colspan="1"><span>DB</span></th>
+            <th colspan="1"><span>DESIGN</span></th>
+            <th colspan="5"><span>DEPLOYMENT</span></th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td align="center">
                 <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+            </td>
+            <td align="center">
+                <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white">
+            </td>
+            <td align="center">
+                <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+            </td>
+            <td align="center">
+                <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+            </td>
+            <td align="center">
+                <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+            </td>
+            <td align="center">
+                <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white">
+            </td>
+            <td align="center">
+                <img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white">
+            </td>
+            <td align="center">
+                <img src="https://img.shields.io/badge/amazon LightSail-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white">
+            </td>
+            <td align="center">
+                <img src="https://img.shields.io/badge/amazon s3-569A31?style=for-the-badge&logo=amazons3&logoColor=white">
+            </td>
+            <td align="center">
+                <img src="https://img.shields.io/badge/amazon RDS-527FFF?style=for-the-badge&logo=amazonrds&logoColor=white">
+            </td>
+        </tr>
+        <tr>
+            <td align="center" rowspan="3">
+                <img src="https://img.shields.io/badge/nginx-009639?style=for-the-badge&logo=nginx&logoColor=white">
+            </td>
+            <td align="center" rowspan="3">
+                <img src="https://img.shields.io/badge/gunicorn-499848?style=for-the-badge&logo=gunicorn&logoColor=white">
             </td>
         </tr>
     </tbody>
