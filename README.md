@@ -22,9 +22,11 @@
         </tr>
     </thead>
     <tbody>
-        <td align="center">
-        <a><image srd="<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"></a>
-        </td>
+        <tr>
+            <td align="center">
+                <a><img srd="<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"></a>
+            </td>
+        </tr>
     </tbody>
 </table>
 
