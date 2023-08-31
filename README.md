@@ -207,7 +207,7 @@
 
   ## Spectacular
       - drf(django rest framwork)를 통해서 설계된 API를 OAS3.0 에 맞게 문서화를 도와주는 라이브러리
-  ## 배포 (서버구조)
+  - 배포 (서버구조)
       <img width="1796" alt="서버구조" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/c233f21d-3ed8-4107-aec1-1a064fafdee8">
 
 # 5. 라이브 데모
