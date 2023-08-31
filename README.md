@@ -82,7 +82,8 @@
   - User
   - Spectacular
       - drf(django rest framwork)를 통해서 설계된 API를 OAS3.0 에 맞게 문서화를 도와주는 라이브러리
-  - 배포
+  - 배포 (서버구조)
+      - 
 
 # 5. 라이브 데모
 |   | 이미지/데모 | 비고 |
