@@ -24,7 +24,7 @@
     <tbody>
         <tr>
             <td align="center">
-                <a><img srd="<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"></a>
+                <img srd="<img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
             </td>
         </tr>
     </tbody>
