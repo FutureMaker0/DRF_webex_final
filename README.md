@@ -68,9 +68,9 @@
 # Index
   1. DataBase Structure
   2. API 명세(SWAGGER/REDOC)
-     |  | swagger | redoc |
-     |--|---------|-------|
-     ||||
+     | swagger | redoc |
+     |:---------:|:-------:|
+     |<img width="731" alt="swagger" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/9ebc11a4-e655-4062-9bae-a2d240e4d2ce">|<img width="854" alt="redoc" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/71ad9542-cd88-4852-975c-14b8b2c38fda">|
      
 # 팀원소개 및 역할
   - 남궁범: 유저,인증 관련 개발
