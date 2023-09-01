@@ -114,16 +114,16 @@
                 <a href="https://github.com/tombeom">@tombeom</a>
             </td>
             <td align="center">
-                <a href="https://github.com/tombeom">@tombeom</a>
+                <a href="https://github.com/vBORIv">@vBORIv</a>
             </td>
             <td align="center">
-                <a href="https://github.com/tombeom">@tombeom</a>
+                <a href="https://github.com/rlguswn">@rlguswn</a>
             </td>
             <td align="center">
-                <a href="https://github.com/tombeom">@tombeom</a>
+                <a href="https://github.com/FutureMaker0">@FutureMaker0</a>
             </td>
             <td align="center">
-                <a href="https://github.com/tombeom">@tombeom</a>
+                <a href="https://github.com/jongsoo-P">@jongsoo-P</a>
             </td>
         </tr>
         <tr>
