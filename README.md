@@ -16,8 +16,8 @@
   - http://3.37.187.68:8000/api/swagger
   - http://3.37.187.68:8000/api/redoc
   - 테스트 계정 (authenticated 된 계정만 접근할 수 있습니다.)
-      - id: example
-      - pw: example
+      - id: test
+      - pw: testpw00
 
 # 배포 서버 구조
   <img width="1796" alt="서버구조" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/c233f21d-3ed8-4107-aec1-1a064fafdee8">
@@ -97,19 +97,19 @@
     <tbody>
         <tr>
             <td align="center">
-                <img width="125px" src=""/>
+                <img width="125px" src="https://avatars.githubusercontent.com/u/90359639?v=4"/>
             </td>
             <td align="center">
-                <img width="125px" src=""/>
+                <img width="125px" src="https://avatars.githubusercontent.com/u/89283288?v=4"/>
             </td>
             <td align="center">
-                <img width="125px" src=""/>
+                <img width="125px" src="https://avatars.githubusercontent.com/u/95518318?v=4"/>
             </td>
             <td align="center">
-                <img width="125px" src=""/>
+                <img width="125px" src="https://avatars.githubusercontent.com/u/120623320?v=4"/>
             </td>
             <td align="center">
-                <img width="125px" src=""/>
+                <img width="125px" src="https://avatars.githubusercontent.com/u/131739329?v=4"/>
             </td>
         </tr>
         <tr>
