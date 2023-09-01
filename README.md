@@ -172,11 +172,13 @@
 # 5. 라이브 데모
 |   | 이미지/데모 | 비고 |
 |---|:--------:|:---:|
-| Classroom |||
-| News |||
-| User |||
-| spectacular |<img width="731" alt="swagger" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/9ebc11a4-e655-4062-9bae-a2d240e4d2ce">| swagger-ui |
-|  |<img width="854" alt="redoc" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/71ad9542-cd88-4852-975c-14b8b2c38fda">| redoc-ui |
+| 메인 페이지 | ![메인](https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/c04c8f3f-feac-48d2-9e5e-6036a6ca66e0) | 메인 페이지 스크롤 |
+| Classroom | <img width="1468" alt="클래스룸 목록" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/730c9291-4f3a-4aac-aac1-251f939a84e1"> | 클래스룸 목록 |
+| Classroom | <img width="1470" alt="클래스룸 상세" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/9907d955-ac78-4181-a13d-fe66f6107e41"> | 클래스룸 상세 |
+| News | <img width="1469" alt="뉴스 목록" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/bba85e7c-ee9b-49b7-bbda-bf2b749e8df6"> | 뉴스 크롤링 |
+| User | <img width="1470" alt="로그인" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/641c4cc0-a4c2-4418-b181-b99a447ea33f"> | 유저 로그인 |
+| drf-spectacular |<img width="731" alt="swagger" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/9ebc11a4-e655-4062-9bae-a2d240e4d2ce">| SWAGGER-UI |
+| drf-spectacular |<img width="854" alt="redoc" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/71ad9542-cd88-4852-975c-14b8b2c38fda">| REDOC-UI |
 
 
 # 6. 개발 중 장애물 & 극복 방법
