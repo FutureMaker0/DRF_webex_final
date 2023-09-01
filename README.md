@@ -11,7 +11,11 @@
   -
 
 # API 명세
-  -
+  - http://3.37.187.68:8000/api/swagger
+  - http://3.37.187.68:8000/api/redoc
+  - 테스트 계정 (authenticated 된 계정만 접근할 수 있습니다.)
+      - id: example
+      - pw: example
 
 # Index
   1. 기술스택 & 개발환경
@@ -68,12 +72,6 @@
 </table>
      
 # 2. 팀원소개 및 역할
-| ★남궁범★ | 이지섭 | 주기현 | 김재현 | 박종수 |
-| :----: | :----: | :----: | :----: | :----: |
-| <img width="125px" src="https://avatars.githubusercontent.com/u/90359639?v=4"/> | <img width="125px" src="https://avatars.githubusercontent.com/u/90359639?v=4" /> | <img width="125px" src="https://avatars.githubusercontent.com/u/90359639?v=4" /> | <img width="125px" src="https://avatars.githubusercontent.com/u/90359639?v=4" /> | <img width="125px" src="https://avatars.githubusercontent.com/u/90359639?v=4" /> |
-| [@tombeom](https://github.com/tombeom) | [@tombeom](https://github.com/tombeom) | [@tombeom](https://github.com/tombeom) | [@tombeom](https://github.com/tombeom)                     | [@tombeom](https://github.com/tombeom) |
-| 유저, 인증 관련 개발 | 뉴스 CRUD 구현 | 게시판 CRUD 구현 | 코드 리팩토링, drf-spectacular | s3 버킷 파일 업로드, Nginx 배포 |
-
 <table>
     <colgroup>
         <col style="width: 150px;">
