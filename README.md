@@ -66,7 +66,7 @@
               <img src="https://img.shields.io/badge/nginx-009639?style=for-the-badge&logo=nginx&logoColor=white">
               <img src="https://img.shields.io/badge/gunicorn-499848?style=for-the-badge&logo=gunicorn&logoColor=white">
           </td>
-          <td>
+          <td align="center">
             <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
             <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
             <img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
