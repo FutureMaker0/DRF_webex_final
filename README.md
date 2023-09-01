@@ -4,6 +4,8 @@
     - 클래스를 운영하는 선생님과, 원하는 클래스를 수강하는 학생 간의 교육이 이루어지는 온라인 학습 플랫폼입니다.
   - REPO 주소: https://github.com/DevelOrm/DeveLearn
 
+  <img width="1432" alt="메인 페이지" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/f58593dc-a1ff-4647-936b-39dc315d6227">
+
 # 개발 기간
   - 23.8.17 ~ 23.09.04
 
