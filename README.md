@@ -275,18 +275,53 @@
 
 
 # 7. 추가 및 리서치 하고 싶은 기능
-  - Classroom
-    - 게시글에 영상을 첨부해 재생할 수 있는 기능
-    - 신고 기능(분탕 유저 신고 기능, 오타수정 제보 기능, 에러 제보 기능 등))
-   
-  - News
-
-  - User
-
-  - drf-spectacular
-    - View 클래스 내부 메소드 단위의 schema를 일괄적으로 적용한 것에 대한 아쉬움 존재
-    - 단순 적용 및 담당 serializer를 request/response하여 api 동작을 확인하는 것에 추가로, 메소드별 커스터마이징 추가적용 희망
-      - 커스터마이징 시 각 파라미터별 역할과 사용법을 좀 더 익혀 서비스 개발 시 협업에 큰 도움이 되는 drf-spectacular에 대한 이해도와 활용 스킬을 증진하고자 함
+<table>
+    <thead align="center">
+        <tr>
+            <th><span>기능(APP)</span></th>
+            <th><span>TO-BE</span></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">
+                <a>Classroom</a>
+            </td>
+            <td>
+                <a> - 게시글에 영상을 첨부해 재생할 수 있는 기능 </a>
+                <a> - 신고 기능(분탕 유저 신고 기능, 오타수정 제보 기능, 에러 제보 기능 등)) </a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a>News</a>
+            </td>
+            <td>
+                <a> -  </a> <br>
+                <a> -  </a> <br>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a>User</a>
+            </td>
+            <td>
+                <a> - </a> <br>
+                <a> - </a> <br>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a>drf-spectacular</a>
+            </td>
+            <td>
+                <a> - View 클래스 내부 메소드 단위의 schema를 일괄적으로 적용한 것에 대한 아쉬움 존재 </a> <br>
+                <a> - 단순 적용 및 담당 serializer를 request/response하여 api 동작을 확인하는 것에 추가로, 메소드별 커스터마이징 추가적용 희망 </a> <br>
+                <a> - 커스터마이징 시 각 파라미터별 역할과 사용법을 좀 더 익혀 서비스 개발 시 협업에 큰 도움이 되는 drf-spectacular에 대한 이해도와 활용 스킬을 증진하고자 함</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 
 # 8. 프로젝트 소감 (어려웠던 점 & 배운점 & 향후 계획)
