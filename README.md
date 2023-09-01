@@ -4,7 +4,7 @@
     - 클래스를 운영하는 선생님과, 원하는 클래스를 수강하는 학생 간의 교육이 이루어지는 온라인 학습 플랫폼입니다.
   - REPO 주소: https://github.com/DevelOrm/DeveLearn
 
-  <img width="1432" alt="메인 페이지" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/f58593dc-a1ff-4647-936b-39dc315d6227">
+  ![메인](https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/c04c8f3f-feac-48d2-9e5e-6036a6ca66e0)
 
 # 개발 기간
   - 23.8.17 ~ 23.09.04
@@ -169,10 +169,9 @@
 
   
 
-# 5. 라이브 데모
-|   | 이미지/데모 | 비고 |
+# 5. 기능(APP)별 라이브 데모
+| APP | 이미지/데모 | 비고 |
 |---|:--------:|:---:|
-| 메인 페이지 | ![메인](https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/c04c8f3f-feac-48d2-9e5e-6036a6ca66e0) | 메인 페이지 스크롤 |
 | Classroom | <img width="1468" alt="클래스룸 목록" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/730c9291-4f3a-4aac-aac1-251f939a84e1"> | 클래스룸 목록 |
 | Classroom | <img width="1470" alt="클래스룸 상세" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/9907d955-ac78-4181-a13d-fe66f6107e41"> | 클래스룸 상세 |
 | News | <img width="1469" alt="뉴스 목록" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/bba85e7c-ee9b-49b7-bbda-bf2b749e8df6"> | 뉴스 크롤링 |
