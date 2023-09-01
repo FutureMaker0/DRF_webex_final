@@ -93,19 +93,19 @@
     <tbody>
         <tr>
             <td align="center">
-                <img width="125px" src="https://avatars.githubusercontent.com/u/90359639?v=4"/>
+                <img width="200px" src="https://avatars.githubusercontent.com/u/90359639?v=4"/>
             </td>
             <td align="center">
-                <img width="125px" src="https://avatars.githubusercontent.com/u/89283288?v=4"/>
+                <img width="200px" src="https://avatars.githubusercontent.com/u/89283288?v=4"/>
             </td>
             <td align="center">
-                <img width="125px" src="https://avatars.githubusercontent.com/u/95518318?v=4"/>
+                <img width="200px" src="https://avatars.githubusercontent.com/u/95518318?v=4"/>
             </td>
             <td align="center">
-                <img width="125px" src="https://avatars.githubusercontent.com/u/120623320?v=4"/>
+                <img width="200px" src="https://avatars.githubusercontent.com/u/120623320?v=4"/>
             </td>
             <td align="center">
-                <img width="125px" src="https://avatars.githubusercontent.com/u/131739329?v=4"/>
+                <img width="200px" src="https://avatars.githubusercontent.com/u/131739329?v=4"/>
             </td>
         </tr>
         <tr>
