@@ -33,6 +33,7 @@
             <th><span>DB</span></th>
             <th><span>DESIGN</span></th>
             <th><span>DEPLOYMENT</span></th>
+            <th><span></span>MANAGEMENT</th>
         </tr>
     </thead>
     <tbody>
@@ -58,17 +59,83 @@
               <img src="https://img.shields.io/badge/nginx-009639?style=for-the-badge&logo=nginx&logoColor=white">
               <img src="https://img.shields.io/badge/gunicorn-499848?style=for-the-badge&logo=gunicorn&logoColor=white">
           </td>
+          <td>
+            <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+            <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
+            <img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
+          </td>
     </tbody>
 </table>
      
 # 2. 팀원소개 및 역할
-  |  | 팀원 | 역할 |
-  |---|:---:|:---:|
-  | 1 | 남궁범 | 유저, 인증 관련 개발 |
-  | 2 | 이지섭 | 뉴스 CRUD 구현 |
-  | 3 | 주기현 | 게시판 CRUD 구현 |
-  | 4 | 김재현 | 코드 리팩토링, drf-spectacular |
-  | 5 | 박종수 | s3 버킷 파일 업로드, Nginx 배포 |
+| ★남궁범★ | 이지섭 | 주기현 | 김재현 | 박종수 |
+| :----: | :----: | :----: | :----: | :----: |
+| <img width="125px" src="https://avatars.githubusercontent.com/u/90359639?v=4"/> | <img width="125px" src="https://avatars.githubusercontent.com/u/90359639?v=4" /> | <img width="125px" src="https://avatars.githubusercontent.com/u/90359639?v=4" /> | <img width="125px" src="https://avatars.githubusercontent.com/u/90359639?v=4" /> | <img width="125px" src="https://avatars.githubusercontent.com/u/90359639?v=4" /> |
+| [@tombeom](https://github.com/tombeom) | [@tombeom](https://github.com/tombeom) | [@tombeom](https://github.com/tombeom) | [@tombeom](https://github.com/tombeom)                     | [@tombeom](https://github.com/tombeom) |
+| 유저, 인증 관련 개발 | 뉴스 CRUD 구현 | 게시판 CRUD 구현 | 코드 리팩토링, drf-spectacular | s3 버킷 파일 업로드, Nginx 배포 |
+
+<table>
+    <colgroup>
+        <col style="width: 150px;">
+        <col style="width: 150px;">
+        <col style="width: 150px;">
+        <col style="width: 150px;">
+        <col style="width: 150px;">
+    </colgroup>
+    <thead align="center">
+        <tr>
+            <th>★남궁범★</th>
+            <th>이지섭</th>
+            <th>주기현</th>
+            <th>김재현</th>
+            <th>박종수</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">
+                <img width="125px" src="https://avatars.githubusercontent.com/u/90359639?v=4"/>
+            </td>
+            <td align="center">
+                <img width="125px" src="https://avatars.githubusercontent.com/u/90359639?v=4" />
+            </td>
+            <td align="center">
+                <img width="125px" src="https://avatars.githubusercontent.com/u/90359639?v=4" />
+            </td>
+            <td align="center">
+                <img width="125px" src="https://avatars.githubusercontent.com/u/90359639?v=4" />
+            </td>
+            <td align="center">
+                <img width="125px" src="https://avatars.githubusercontent.com/u/90359639?v=4" />
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a href="https://github.com/tombeom">@tombeom</a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/tombeom">@tombeom</a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/tombeom">@tombeom</a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/tombeom">@tombeom</a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/tombeom">@tombeom</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">유저, 인증 관련 개발</td>
+            <td align="center">뉴스 CRUD 구현</td>
+            <td align="center">게시판 CRUD 구현</td>
+            <td align="center">코드 리팩토링, drf-spectacular</td>
+            <td align="center">s3 버킷 파일 업로드, Nginx 배포</td>
+        </tr>
+    </tbody>
+</table>
+
 
 # 3. 프로젝트 요약
   - 핵심요약1
