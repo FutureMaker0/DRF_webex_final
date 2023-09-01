@@ -79,11 +79,11 @@
 # 2. 팀원소개 및 역할
 <table>
     <colgroup>
-        <col style="width: 150px;">
-        <col style="width: 150px;">
-        <col style="width: 150px;">
-        <col style="width: 150px;">
-        <col style="width: 150px;">
+        <col style="width: 200px;">
+        <col style="width: 200px;">
+        <col style="width: 200px;">
+        <col style="width: 200px;">
+        <col style="width: 200px;">
     </colgroup>
     <thead align="center">
         <tr>
