@@ -32,7 +32,7 @@
   [7. 추가 및 리서치 하고 싶은 기능](#7-추가-및-리서치-하고-싶은-기능)  
   [8. 프로젝트 소감 (어려웠던 점 & 배운점 & 향후 계획)](#8-프로젝트-소감-어려웠던-점--배운점--향후-계획)  
   [9. Q & A](#)
-    
+  
 # 1. 기술 스택 & 개발 환경
 <table>
     <thead align="center">
@@ -40,7 +40,6 @@
             <th><span>BE</span></th>
             <th><span>FE</span></th>
             <th><span>DB</span></th>
-            <th><span>DESIGN</span></th>
             <th><span>DEPLOYMENT</span></th>
             <th><span></span>MANAGEMENT</th>
         </tr>
@@ -52,14 +51,11 @@
           </td>
           <td align="center">
               <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-              <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+              <img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white">
               <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
           </td>
           <td align="center">
               <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white">
-          </td>
-          <td align="center">
-              <img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white">
           </td>
           <td align="center">
               <img src="https://img.shields.io/badge/amazon LightSail-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white">
