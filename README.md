@@ -17,6 +17,9 @@
       - id: example
       - pw: example
 
+# 배포 서버 구조
+  <img width="1796" alt="서버구조" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/c233f21d-3ed8-4107-aec1-1a064fafdee8">
+
 # Index
   1. 기술스택 & 개발환경
   2. 팀원소개 및 역할
@@ -136,144 +139,28 @@
 
 
 # 3. 프로젝트 요약
-  - 핵심요약1
-  - 핵심요약2
-      - 부가설명1
-      - 부가설명2
+  - 서비스 사용자 관점
+    - 온라인 학습 플랫폼 DeveLearn은 선생님-학생 간 학습이 이루어지는 공간입니다.
+    - 선생님은 기술스택 별 클래스를 개설하고 문제출제(문제게시판), 강의자료 게시(자료게시판), 질문대응(질문게시판)을 수행합니다.
+    - 학생은 원하는 기술스택 클래스를 수강하며 문제 답변제출(문제게시판), 강의자료 다운로드(자료게시판), 질문등록(질문게시판)을 할 수 있습니다.
+    - 선생님이 출제하고 학생이 제출한 문제 답변을 자동으로 채점하여 결과를 피드백합니다.
+    - 사용자별(학생, 선생님) 클래스 구독 정보를 알 수 있습니다.
+    - IT업계 동향을 파악할 수 있는 최신 뉴스를 홈페이지에서 보여줍니다.
+      
+  - 서비스 개발자 관점
+    - drf-spectacular를 적용해 API 명세를 작성하여 협업 간 효율증진을 도모하였습니다.
+    - 서비스를 실 배포하여(Lightsail, EC2활용) 추후 운영이 가능하도록 하였습니다. 
    
 # 4. 주요 기능 소개
-  ## Classroom
-      클래스룸 - 게시판 - 댓글 구조의 기본 CRUD 기능을 제공한다
-
-      - 클래스룸
-      게시판의 종류는 문제 게시판, 강의자료 게시판, 질문 게시판 총 3가지가 있다
-      선생님으로 지정된 유저가 클래스룸, 게시판을 생성할 수 있고 클래스룸을 구독한 유저들이 이를 자유롭게 이용 가능하다
-      - 문제 게시판
-      선생님으로 지정된 유저가 문제 게시글을 생성하면 각 유저들이 자유롭게 문제에 대한 댓글 혹은 답변 제출이 가능하다
-      auto_score가 true인 문제 게시글에 유저가 답변을 제출하면 미리 지정된 문제 게시글의 solution필드와 비교해 채점하며 정답 여부가 answer_status필드에 저장된다
+  - Classroom
       
-      ```python
-      ## models.py
-      class Test(models.Model):
-      		solution = ArrayField(models.CharField(max_length=50, blank=True), null=True, blank=True)
-          auto_score = models.BooleanField()
-      		# ...
-      
-      ## views.py TestSubmitView
-      def post(self, request):
-          try:
-              test_pk = request.data['test']
-              test_obj = Test.objects.get(pk=test_pk)
-              if request.user.is_authenticated:
-                  solution = test_obj.solution
-                  user_answer = request.data['user_answer']
-                  if test_obj.auto_score:
-                      answer_status = user_answer in solution
-                  else:
-                      answer_status = None
-      		# ...
-      ```
-      
-      - 강의자료 게시판
-      선생님으로 지정된 유저가 학습용 파일, 이미지, 텍스트를 게시글로 작성할 수 있고 유저들이 자유롭게 이용 가능하다
-      - 질문 게시판
-      클래스룸을 구독한 유저 모두가 이용 가능하며 이미지를 첨부해 게시글을 작성할 수 있다
 
-  ## News
-    GitHub Action을 이용하여 개발 관련 키워드를 검색하여 나온 뉴스 크롤링을 매일 진행한다. 크롤링된 뉴스 목록은 post로 `/news/bot/`의 URL로 전송하여 서버 DB에 저장한다.
+  - News
+    
+    
+  - User
 
-    - 검색엔진 확장성
-    
-    ```python
-    ## NewsBot.py
-    def NaverNews(keyword):
-        # ...
-    
-    def GoogleNews(keyword):
-        # ...
-    
-    ## main.py
-    import NewsBot
-    
-    NewsBot.NaverNews(keyword)
-    # ...
-    ```
-    
-    각 검색엔진에서 뉴스 리스트를 크롤링하는 기능을 하나의 함수로 구현하여 `main.py`에서 실행하도록 구조화하였다. 이를 통해 추후 크롤링할 검색엔진 추가 또는 페이지 구조 변경으로 인한 함수 수정 시 용이성을 높일 수 있었다.
-    
-    - 검색 키워드 확장성
-    
-    ```python
-    ## keywords.txt
-    keyword1 keyword2 ...
-    
-    ## main.py
-    with open('keywords.txt', 'r') as keywords_file:
-            keywords = keywords_file.read().split()
-    
-        for keyword in keywords:
-            NewsBot.NaverNews(keyword)
-            # ...
-    ```
-    
-    검색에 사용할 키워드를 외부 파일에서 가져와 각 검색 엔진 크롤링 함수에 넣어 실행하였다. 이를 통해 추후 검색 키워드 추가 및 변동 시 용이성을 높일 수 있었다.
-    
-    - 중복 뉴스 처리
-    
-    ```python
-    ## news/views.py
-    for news_index in data:
-        news = data[news_index]
-        if News.objects.filter(title=news['title']).exists():
-            continue
-    ```
-    
-    크롤링된 뉴스 데이터가 서버로 전송되면 중복을 확인하여 DB에 없는 뉴스인 경우에만 새로 추가한다. 같은 뉴스이더라도 redirect되는 링크가 상이할 수 있기 때문에 기사 제목으로 중복 여부를 확인하였다.
-    
-    각 뉴스 데이터마다 DB 호출을 하여 확인해야 하기 때문에 다소 비효율적인 측면이 존재한다. 우선적으로 가장 서버 활성이 적을 것이라 예상되는 늦은 새벽 시간에 크롤링 및 서버 전송이 동작하도록 설정하여 과부하를 최소화하였다.
-    
-  ## User
-    로그인
-
-    로그아웃
-    
-    회원정보
-    
-    중복체크
-    
-    비밀번호 변경
-    
-    비밀번호 초기화
-    
-    회원가입
-    
-    - 시리얼라이저 커스텀
-    - validate 추가
-    회원가입 이메일 확인
-    소셜로그인 네이버
-    - 
-    
-    랜덤 닉네임
-    
-    소셜 로그인 정보 넣기
-    
-    프론트단에서 할지 서버단에서 할지
-    
-    생각할 변수들이 너무 많다
-    
-    로깅
-    기본 프로필
-    이미지 변환 - 사진 리사이징, 메타 데이터 제거
-    구현 후 서버 체크
-    
-    핸드폰 번호 인증
-    
-    - 보안 취약
-
-  ## Spectacular
-      - drf(django rest framwork)를 통해서 설계된 API를 OAS3.0 에 맞게 문서화를 도와주는 라이브러리
-  - 배포 (서버구조)
-      <img width="1796" alt="서버구조" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/c233f21d-3ed8-4107-aec1-1a064fafdee8">
+  
 
 # 5. 라이브 데모
 |   | 이미지/데모 | 비고 |
@@ -283,6 +170,7 @@
 | User |||
 | spectacular |<img width="731" alt="swagger" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/9ebc11a4-e655-4062-9bae-a2d240e4d2ce">| swagger-ui |
 |  |<img width="854" alt="redoc" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/71ad9542-cd88-4852-975c-14b8b2c38fda">| redoc-ui |
+
 
 # 6. 개발 중 장애물 & 극복 방법
   - 장애물
