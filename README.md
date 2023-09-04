@@ -58,9 +58,8 @@
               <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white">
           </td>
           <td align="center">
-              <img src="https://img.shields.io/badge/amazon LightSail-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white">
+              <img src="https://img.shields.io/badge/Amazon EC2-FF9900?style=for-the-badge&logo=Amazon EC2&logoColor=white">
               <img src="https://img.shields.io/badge/amazon s3-569A31?style=for-the-badge&logo=amazons3&logoColor=white">
-              <img src="https://img.shields.io/badge/amazon RDS-527FFF?style=for-the-badge&logo=amazonrds&logoColor=white">
               <img src="https://img.shields.io/badge/nginx-009639?style=for-the-badge&logo=nginx&logoColor=white">
               <img src="https://img.shields.io/badge/gunicorn-499848?style=for-the-badge&logo=gunicorn&logoColor=white">
           </td>
