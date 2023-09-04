@@ -10,7 +10,7 @@
   - 23.8.17 ~ 23.09.04
 
 # DataBase Structure
-  -
+  ![ERD](https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/ef6ae05e-57b3-437d-9501-16dd91d4b21d)
 
 # API 명세
   - http://52.79.53.117/api/swagger
@@ -20,7 +20,7 @@
       - pw: test
 
 # 배포 서버 구조
-  <img width="1796" alt="서버구조" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/c233f21d-3ed8-4107-aec1-1a064fafdee8">
+  ![서버구조2](https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/fe6b7858-b548-4883-a107-ccd5813fe61c)
 
 # Index
   [1. 기술스택 & 개발환경](#1-기술-스택--개발-환경)  
