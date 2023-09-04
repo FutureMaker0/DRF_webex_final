@@ -330,8 +330,7 @@
 # 5. 기능(APP)별 라이브 데모
 | APP | 이미지/데모 | 비고 |
 |:---:|:--------:|:---:|
-| Classroom | <img width="1468" alt="클래스룸 목록" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/730c9291-4f3a-4aac-aac1-251f939a84e1"> | 클래스룸 목록 |
-| Classroom | <img width="1470" alt="클래스룸 상세" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/9907d955-ac78-4181-a13d-fe66f6107e41"> | 클래스룸 상세 |
+| Classroom | ![클래스룸1](https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/99e2bb3d-23c3-4cf8-a27e-69df46caa213) | 클래스룸 동작 |
 | News | <img width="1469" alt="뉴스 목록" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/bba85e7c-ee9b-49b7-bbda-bf2b749e8df6"> | 뉴스 크롤링 |
 | User | <img width="1470" alt="로그인" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/641c4cc0-a4c2-4418-b181-b99a447ea33f"> | 유저 로그인 |
 | drf-spectacular | ![swagger](https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/d25104ca-50ce-4f28-a7e4-c7d35d329ca2) | SWAGGER-UI |
