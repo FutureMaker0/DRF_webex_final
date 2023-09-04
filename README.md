@@ -13,11 +13,11 @@
   -
 
 # API 명세
-  - http://3.37.187.68:8000/api/swagger
-  - http://3.37.187.68:8000/api/redoc
+  - http://52.79.53.117/api/swagger
+  - http://52.79.53.117/api/redoc
   - 테스트 계정 (authenticated 된 계정만 접근할 수 있습니다.)
       - id: test
-      - pw: testpw00
+      - pw: test
 
 # 배포 서버 구조
   <img width="1796" alt="서버구조" src="https://github.com/FutureMaker0/DRF_webex_final/assets/120623320/c233f21d-3ed8-4107-aec1-1a064fafdee8">
