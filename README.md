@@ -41,7 +41,7 @@
             <th><span>FE</span></th>
             <th><span>DB</span></th>
             <th><span>DEPLOYMENT</span></th>
-            <th><span></span>MANAGEMENT</th>
+            <th><span>MANAGEMENT</span></th>
         </tr>
     </thead>
     <tbody>
@@ -55,7 +55,7 @@
               <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
           </td>
           <td align="center">
-              <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white">
+              <img src="https://img.shields.io/badge/postgresql-4169E1?style=for-the-badge&logo=postgresql&logoColor=white">
           </td>
           <td align="center">
               <img src="https://img.shields.io/badge/Amazon EC2-FF9900?style=for-the-badge&logo=Amazon EC2&logoColor=white">
