@@ -200,27 +200,27 @@
     선생님으로 지정된 유저가 문제 게시글을 생성하면 각 유저들이 자유롭게 문제에 대한 댓글 혹은 답변 제출이 가능하다
     auto_score가 true인 문제 게시글에 유저가 답변을 제출하면 미리 지정된 문제 게시글의 solution필드와 비교해 채점하며 정답 여부가 answer_status필드에 저장된다
     
-    ```python
-    ## models.py
-    class Test(models.Model):
-        solution = ArrayField(models.CharField(max_length=50, blank=True), null=True, blank=True)
-        auto_score = models.BooleanField()
-        # ...
-    
-    ## views.py TestSubmitView
-    def post(self, request):
-        try:
-            test_pk = request.data['test']
-            test_obj = Test.objects.get(pk=test_pk)
-            if request.user.is_authenticated:
-                solution = test_obj.solution
-                user_answer = request.data['user_answer']
-                if test_obj.auto_score:
-                    answer_status = user_answer in solution
-                else:
-                    answer_status = None
-        # ...
-    ```
+      ```python
+      ## models.py
+      class Test(models.Model):
+          solution = ArrayField(models.CharField(max_length=50, blank=True), null=True, blank=True)
+          auto_score = models.BooleanField()
+          # ...
+      
+      ## views.py TestSubmitView
+      def post(self, request):
+          try:
+              test_pk = request.data['test']
+              test_obj = Test.objects.get(pk=test_pk)
+              if request.user.is_authenticated:
+                  solution = test_obj.solution
+                  user_answer = request.data['user_answer']
+                  if test_obj.auto_score:
+                      answer_status = user_answer in solution
+                  else:
+                      answer_status = None
+          # ...
+      ```
     
     - 강의자료 게시판
     선생님으로 지정된 유저가 학습용 파일, 이미지, 텍스트를 게시글로 작성할 수 있고 유저들이 자유롭게 이용 가능하다
@@ -234,73 +234,73 @@
 
     - 크롤링 봇 자동화
     
-    ```yml
-    ## .github/workflows/DeveLearnNewsBot.yml
-    on:
-      schedule:
-        - cron: "0 21 * * *"
-    
-    jobs:
-      build:
-        # ...
-    
-        - name: Install dependencies
-          run: |
-            python -m pip install --upgrade pip
-            python -m pip install beautifulsoup4
-            python -m pip install requests
-        - name: run macro main.py file
-          run: |
-            python main.py
-    ```
+      ```yml
+      ## .github/workflows/DeveLearnNewsBot.yml
+      on:
+        schedule:
+          - cron: "0 21 * * *"
+      
+      jobs:
+        build:
+          # ...
+      
+          - name: Install dependencies
+            run: |
+              python -m pip install --upgrade pip
+              python -m pip install beautifulsoup4
+              python -m pip install requests
+          - name: run macro main.py file
+            run: |
+              python main.py
+      ```
     
     - GitHub Action을 이용하여 매일 `21:00 UTC` 에 Linux에 환경세팅 후 main.py 파일을 실행하도록 설정했다. main.py 파일에서 크롤링 함수를 실행하고 서버 URL에 뉴스 데이터를 담아 전송하면, 서버에서 데이터 확인 후 DB에 저장하게 된다.
     
     - 검색엔진 확장성
     
-    ```python
-    ## NewsBot.py
-    def NaverNews(keyword):
-        # ...
-    
-    def GoogleNews(keyword):
-        # ...
-    
-    ## main.py
-    import NewsBot
-    
-    NewsBot.NaverNews(keyword)
-    # ...
-    ```
+      ```python
+      ## NewsBot.py
+      def NaverNews(keyword):
+          # ...
+      
+      def GoogleNews(keyword):
+          # ...
+      
+      ## main.py
+      import NewsBot
+      
+      NewsBot.NaverNews(keyword)
+      # ...
+      ```
     
     - 각 검색엔진에서 뉴스 리스트를 크롤링하는 기능을 하나의 함수로 구현하여 `main.py`에서 실행하도록 구조화하였다. 이를 통해 추후 크롤링할 검색엔진 추가 또는 페이지 구조 변경으로 인한 함수 수정 시 용이성을 높일 수 있었다.
     
     - 검색 키워드 확장성
     
-    ```python
-    ## keywords.txt
-    keyword1 keyword2 ...
-    
-    ## main.py
-    with open('keywords.txt', 'r') as keywords_file:
-            keywords = keywords_file.read().split()
-    
-        for keyword in keywords:
-            NewsBot.NaverNews(keyword)
-            # ...
-    ```
+      ```python
+      ## keywords.txt
+      keyword1 keyword2 ...
+      
+      ## main.py
+      with open('keywords.txt', 'r') as keywords_file:
+              keywords = keywords_file.read().split()
+      
+          for keyword in keywords:
+              NewsBot.NaverNews(keyword)
+              # ...
+      ```
     
     - 검색에 사용할 키워드를 외부 파일에서 가져와 각 검색 엔진 크롤링 함수에 넣어 실행하였다. 이를 통해 추후 검색 키워드 추가 및 변동 시 용이성을 높일 수 있었다.
     
     - 중복 뉴스 처리
     
-    ```python
-    ## news/views.py
-    for news_index in data:
-        news = data[news_index]
-        if News.objects.filter(title=news['title']).exists():
-            continue
-    ```
+      ```python
+      ## news/views.py
+      for news_index in data:
+          news = data[news_index]
+          if News.objects.filter(title=news['title']).exists():
+              continue
+      ```
     
     - 크롤링된 뉴스 데이터가 서버로 전송되면 중복을 확인하여 DB에 없는 뉴스인 경우에만 새로 추가한다. 같은 뉴스이더라도 redirect되는 링크가 상이할 수 있기 때문에 기사 제목으로 중복 여부를 확인하였다.
     
@@ -308,11 +308,11 @@
     
     - 오늘의 뉴스 기능
     
-    ```python
-    class NewsRecentView(generics.ListAPIView):
-        queryset = News.objects.all().order_by('-written_at')[:6]
-        serializer_class = NewsSerializer
-    ```
+      ```python
+      class NewsRecentView(generics.ListAPIView):
+          queryset = News.objects.all().order_by('-written_at')[:6]
+          serializer_class = NewsSerializer
+      ```
     
     - 프론트엔드 메인페이지에 오늘의 뉴스를 출력하기 위해 최신 뉴스 출력 기능을 구현하였다. 화면에 6개의 뉴스 객체를 출력하기 때문에 가장 최근에 DB에 추가된 순서대로 6개의 뉴스 데이터를 담아 브라우저에 응답한다.
     
